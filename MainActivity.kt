@@ -78,7 +78,7 @@ fun ExpenceApp(dataStore: ExpenseDataStore) {
             Button(
                 onClick = {
                     if (Expence_Name.text.isNotEmpty() && Amount.text.isNotEmpty()) {
-                        val newExpense = "${Expence_Name.text}: \$${Amount.text}"
+                        val newExpense = "${Expence_Name.text}: ₹${Amount.text}"
                         expences = expences + newExpense
                         Expence_Name = TextFieldValue("")
                         Amount = TextFieldValue("")
